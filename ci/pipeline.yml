@@ -158,6 +158,7 @@ resources:
     access_key_id: {{S3_ACCESS_KEY_ID}}
     secret_access_key: {{S3_SECRET_ACCESS_KEY}}
     initial_version: 1.0.0
+    region_name: {{S3_REGION_NAME}}
 
 - name: release-candidate
   type: s3
@@ -166,6 +167,7 @@ resources:
     regexp: {{S3_PIPELINE_ARTIFACTS}}
     access_key_id: {{S3_ACCESS_KEY_ID}}
     secret_access_key: {{S3_SECRET_ACCESS_KEY}}
+    region_name: {{S3_REGION_NAME}}
 
 - name: production-release
   type: s3
@@ -174,3 +176,4 @@ resources:
     regexp: {{S3_DEPLOYMENTS}}
     access_key_id: {{S3_ACCESS_KEY_ID}}
     secret_access_key: {{S3_SECRET_ACCESS_KEY}}
+    region_name: {{S3_REGION_NAME}}
