@@ -3,4 +3,3 @@ applications:
 - name: spring-music-test
   memory: 512M
   instances: 1
-  host: bb-spring-music-test
