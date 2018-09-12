@@ -20,5 +20,5 @@ cf create-space production
 
 #set pipelines in concourse
 fly -t local login -c http://localhost:8080
-fly -t local sp -p spring-music -c pipeline-localstack-s3.yml -l spring-music-pcfdev-credentials.yml -v"GIT_PRIVATE_KEY=$(cat ~/.ssh/id_rsa)"
+fly -t local sp -p spring-music -c pipeline-localstack-s3.yml -l spring-music-pcfdev-credentials.yml -v"GIT_PRIVATE_KEY=$(cat ~/.ssh/id_rsa)" -v"S3_ENDPOINT=http://$(ipconfig getifaddr en0):4572"
 fly -t local up -p spring-music

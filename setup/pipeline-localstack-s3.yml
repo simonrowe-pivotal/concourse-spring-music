@@ -153,7 +153,7 @@ resources:
 - name: version
   type: semver
   source:
-    endpoint: http://localhost:4572
+    endpoint: ((S3_ENDPOINT))
     disable_ssl: true
     bucket: {{S3_BUCKET}}
     key: {{S3_VERSION_FILE}}
@@ -162,7 +162,7 @@ resources:
 - name: release-candidate
   type: s3
   source:
-    endpoint: http://localhost:4572
+    endpoint: ((S3_ENDPOINT))
     disable_ssl: true
     bucket: {{S3_BUCKET}}
     regexp: {{S3_PIPELINE_ARTIFACTS}}
@@ -170,7 +170,7 @@ resources:
 - name: production-release
   type: s3
   source:
-    endpoint: http://localhost:4572
+    endpoint: ((S3_ENDPOINT))
     disable_ssl: true
     bucket: {{S3_BUCKET}}
     regexp: {{S3_DEPLOYMENTS}}
