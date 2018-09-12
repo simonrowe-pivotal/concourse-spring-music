@@ -155,6 +155,8 @@ resources:
   source:
     endpoint: ((S3_ENDPOINT))
     disable_ssl: true
+    access_key_id: blah
+    secret_access_key: blah
     bucket: {{S3_BUCKET}}
     key: {{S3_VERSION_FILE}}
     initial_version: 1.0.0
@@ -164,6 +166,8 @@ resources:
   source:
     endpoint: ((S3_ENDPOINT))
     disable_ssl: true
+    access_key_id: blah
+    secret_access_key: blah
     bucket: {{S3_BUCKET}}
     regexp: {{S3_PIPELINE_ARTIFACTS}}
 
@@ -171,6 +175,8 @@ resources:
   type: s3
   source:
     endpoint: ((S3_ENDPOINT))
+    access_key_id: blah
+    secret_access_key: blah
     disable_ssl: true
     bucket: {{S3_BUCKET}}
     regexp: {{S3_DEPLOYMENTS}}
