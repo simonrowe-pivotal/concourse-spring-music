@@ -42,7 +42,7 @@ jobs:
     - put: deploy-test-app
       params:
         manifest: git-repo/manifest-test.yml
-        current_app_name: spring-music-test
+        current_app_name: spring-music-sjr-test
         path: release-candidate/spring-music*.war
     - task: verify
       file: git-repo/ci/tasks/verify-test.yml
@@ -63,7 +63,7 @@ jobs:
     - put: deploy-uat-app
       params:
         manifest: git-repo/manifest-uat.yml
-        current_app_name: spring-music-uat
+        current_app_name: spring-music-sjr-uat
         path: release-candidate/spring-music*.war
 
   - name: ship-it
@@ -88,7 +88,7 @@ jobs:
     - put: deploy-production-app
       params:
         manifest: git-repo/manifest-prod.yml
-        current_app_name: spring-music
+        current_app_name: spring-music-sjr
         path: final-dir/spring-music*.war
 
   - name: major
