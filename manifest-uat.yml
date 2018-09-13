@@ -1,5 +1,5 @@
 ---
 applications:
-- name: spring-music-uat
+- name: spring-music-sjr-uat
   memory: 1G
   instances: 1

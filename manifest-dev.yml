@@ -1,5 +1,5 @@
 ---
 applications:
-- name: spring-music-dev
+- name: spring-music-sjr-dev
   memory: 1G
   instances: 1

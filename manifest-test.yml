@@ -1,5 +1,5 @@
 ---
 applications:
-- name: spring-music-test
+- name: spring-music-sjr-test
   memory: 1G
   instances: 1
